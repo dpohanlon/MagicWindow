@@ -34,6 +34,10 @@ from PoissonSolver import solve
 
 def create_relief(image_path, size = (250, 250)):
 
+    '''
+    Computes the magic window surface profile by solving the Poisson equation.
+    '''
+
     im = PIL.Image.open(image_path)
     if not (size[0] is None):
         im = im.resize(size)

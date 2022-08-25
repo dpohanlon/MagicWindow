@@ -36,13 +36,13 @@ def solve(image, n, z, max_it = 100000, tol = 1E-10, d = 1):
 
         np.copyto(p, pnew)
 
+        # Dirichlet boundaries, so only operate on 'interior' points
+
         pnew[1:-1, 1:-1] = (0.25 * (p[:-2, 1:-1] + p[2:, 1:-1] + p[1:-1, :-2] + p[1:-1, 2:] - b[1:-1, 1:-1] * dx ** 2))
 
         diff = l2_diff(pnew, p)
 
         if diff < tol:
-
-            print('Final difference:', diff)
 
             break
 
