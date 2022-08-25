@@ -7,3 +7,7 @@ To generate the image $I(\mathbf{R})$ at a distance $z$ from the first surface o
 $$ \nabla^2 h(\mathbf{R}) = \frac{1 - I(\mathbf{R})}{(n - 1) z} $$
 
 with Dirichlet boundary conditions. This is done by solving the discrete Poisson equation using the Jacobi method. A mesh of the surface profile is constructed in Open3D, and the resulting `.obj` file is saved.
+
+<p align="center">
+  <img width="400" height="300" src="assets/fig.jpg">
+</p>
